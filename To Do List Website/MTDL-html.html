@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> MY TO DO LIST </title>
+            <!--Css file-->
+            <link rel="stylesheet" type="text/css" href="MTDL-css.css">
+            <!--To add some icons to the page-->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+        </head> 
+
+    <body>
+        
+        <!--Header-->
+        <div class="header">
+                <img src="logo.png" id="logo" alt="MY TO DO LIST logo">
+                <strong class="name" >MY TO DO LIST</strong> 
+                <strong class="welcoming" >The best way to organize your life!</strong>
+                <div id="date"> </div>  <!--add the current date here-->
+        </div><br>
+      
+         <!--Add task form-->                                
+        <div id="form"> <h2>Add Task</h2> 
+               
+             <form id="TaskForm">
+                <label>Task Name:
+                <input class="AddTask" id="TaskName" type="text" placeholder="Enter your task name" required> </label> <br><br>
+                <label>Category:</label> 
+                    <select class="AddTask" name="category" id="select" >
+                      <option selected >Study</option>
+                      <option>Sport</option>
+                      <option>Home</option>
+                    </select><br><br>
+                <label>Priority:</label>
+                     <label class="radio" ><input type="radio" value="hi" name="priority" required>High </label>
+                     <label class="radio"> <input type="radio" value="med"  name="priority" required>Medium</label>
+                     <label class="radio"> <input type="radio" value="low" name="priority" required>Low </label>
+                <br><br>
+                <label> Deadline:</label>
+                     <input class="AddTask" id="TaskDate" type="date" required>
+                <br><br>
+                <button class="btn" type="reset">Clear</button>
+             </form><br>
+             <button class="btn" id="add">Add New Task</button>
+                
+        </div><br> <hr>
+
+        <!--To do list-->
+        <div>
+             <h2 class ="H2">To Do List </h2>
+             <ol class="ToDo">
+                
+             </ol> 
+        </div><hr>
+
+        <!--Completed Tasks-->
+        <div>
+             <h2 class ="H2">Completed Tasks</h2>   
+             <ol class="completed">
+                 
+             </ol> 
+        </div>
+
+        <!--Footer-->
+        <div class="footer">
+            <p>&copy; All Right Reserved | Nailah AlQahtani </p> 
+            <i class="fas fa-mail-bulk"></i> <a href="mailto:#" id="link">Email Us</a>
+        </div>
+
+        <!--Java Script file-->
+         <script src="MTDL-java.js"></script>  
+    </body>
+    
+
+
+</html>
